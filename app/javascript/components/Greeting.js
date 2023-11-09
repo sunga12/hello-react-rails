@@ -23,7 +23,7 @@ const Greeting = () => {
       <h1>
         Random Greetings
       </h1>
-      <h1>Today's Greeting: {greetings}</h1>
+      <h1>Today's Greeting: {greetings.message}</h1>
     </div>
   );
 };
