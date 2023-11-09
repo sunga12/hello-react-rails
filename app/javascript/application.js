@@ -12,7 +12,7 @@ function App() {
   return (
     <section>
       <h1>
-        HelloMatey
+          Random Greetings
       </h1>
 
       <Routes>

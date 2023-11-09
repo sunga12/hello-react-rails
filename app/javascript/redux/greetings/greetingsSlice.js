@@ -10,7 +10,7 @@ const initialState = {
 export const fetchGreeting = createAsyncThunk(
   'greetings/fetchGreetings', async () => {
     try {
-      const response = await axios('http://localhost:3000/')
+      const response = await axios('/api/v1/greetings/random_greeting')
       console.log(response);
       return response.data;
     } catch (error) {

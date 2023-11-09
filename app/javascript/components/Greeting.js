@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchGreeting } from "../redux/greetings/greetingsSlice";
 
 const Greeting = () => {
-  const { greeting, isLoading } = useSelector((state) => state.greetings);
+  const { greetings, isLoading } = useSelector((state) => state.greetings);
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -19,8 +19,8 @@ const Greeting = () => {
   }
 
   return (
-    <div>
-      <h1>The greeting will be here: {greeting}</h1>
+    <div className="greeting">
+      <h1>Today's Greeting: {greetings}</h1>
     </div>
   );
 };
