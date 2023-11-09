@@ -20,6 +20,9 @@ const Greeting = () => {
 
   return (
     <div className="greeting">
+      <h1>
+        Random Greetings
+      </h1>
       <h1>Today's Greeting: {greetings}</h1>
     </div>
   );
